@@ -29,7 +29,7 @@ urlpatterns = [
 ]
 
 urlpatterns = [
-    path('vehiculos/', VehiculoListView.as_view(), name='vehiculo_list'),
+    path('', VehiculoListView.as_view(), name='vehiculo_list'),
     path('vehiculos/<int:pk>/', VehiculoDetailView.as_view(), name='vehiculo_detail'),
     path('vehiculos/nuevo/', VehiculoCreateView.as_view(), name='vehiculo_create'),
     path('vehiculos/<int:pk>/editar/', VehiculoUpdateView.as_view(), name='vehiculo_update'),
