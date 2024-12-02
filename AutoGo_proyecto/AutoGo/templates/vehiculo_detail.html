@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Detalles del Vehículo</h1>
+  <p>Placa: {{ object.Placa }}</p>
+  <p>Modelo: {{ object.Modelo }}</p>
+  <p>Marca: {{ object.Marca }}</p>
+  <p>Año: {{ object.Año }}</p>
+  <p>Cantidad de Asientos: {{ object.CantidadAsientos }}</p>
+  <p>Tipo: {{ object.Tipo }}</p>
+  <p>Estado de Reserva: {{ object.EstadoReserva }}</p>
+  <a href="{% url 'vehiculo_update' object.pk %}">Editar</a>
+  <a href="{% url 'vehiculo_delete' object.pk %}">Eliminar</a>
+  <a href="{% url 'vehiculo_list' %}">Volver</a>
+</body>
+</html>
